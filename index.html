@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airbnb | Find Your Stay</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-symbol">⌂</span>
+      <span>airbnb</span>
+    </a>
+
+    <nav class="nav-center">
+      <a href="#homes" class="active">Homes</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#host">Become a host</a>
+    </nav>
+
+    <div class="nav-right">
+      <a href="#homes" class="host-link">Find a stay</a>
+      <button class="menu-button" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</span>
+        <h1>Find a place<br>to <span>call yours.</span></h1>
+        <p>Discover unique homes, beautiful escapes, and unforgettable stays around the world.</p>
+        <a href="#homes" class="hero-button">Explore stays <span>→</span></a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+          alt="Beautiful modern holiday home interior">
+        <div class="image-note">
+          <span class="note-icon">✦</span>
+          <div>
+            <strong>Somewhere special</strong>
+            <small>Your next favourite place</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search form: visual front-end only -->
+      <form class="search-bar" action="#homes">
+        <label class="search-field">
+          <span>Where</span>
+          <input type="text" placeholder="Search destinations">
+        </label>
+
+        <label class="search-field">
+          <span>Check in</span>
+          <input type="date" aria-label="Check in date">
+        </label>
+
+        <label class="search-field">
+          <span>Check out</span>
+          <input type="date" aria-label="Check out date">
+        </label>
+
+        <label class="search-field">
+          <span>Who</span>
+          <input type="number" min="1" placeholder="Add guests">
+        </label>
+
+        <button class="search-button" type="submit" aria-label="Search">⌕</button>
+      </form>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories-section" id="homes">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORE YOUR WAY</span>
+          <h2>Find your kind of stay</h2>
+        </div>
+        <a href="#properties" class="text-link">Explore all <span>→</span></a>
+      </div>
+
+      <div class="categories">
+        <a class="category active-category" href="#properties">
+          <span>⌂</span><small>All homes</small>
+        </a>
+        <a class="category" href="#properties">
+          <span>⌁</span><small>Cabins</small>
+        </a>
+        <a class="category" href="#properties">
+          <span>♧</span><small>Nature</small>
+        </a>
+        <a class="category" href="#properties">
+          <span>♨</span><small>Amazing pools</small>
+        </a>
+        <a class="category" href="#properties">
+          <span>⌂</span><small>Beachfront</small>
+        </a>
+        <a class="category" href="#properties">
+          <span>◇</span><small>Design</small>
+        </a>
+        <a class="category" href="#properties">
+          <span>♙</span><small>Unique stays</small>
+        </a>
+      </div>
+    </section>
+
+    <!-- Properties -->
+    <section class="properties-section" id="properties">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">HANDPICKED FOR YOU</span>
+          <h2>Places worth the trip</h2>
+          <p class="section-description">Beautiful stays for your next little getaway.</p>
+        </div>
+        <span class="stay-count">6 special stays</span>
+      </div>
+
+      <div class="property-grid">
+
+        <article class="property-card">
+          <a href="#property-details" class="property-image">
+            <img src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=800&q=85" alt="Cozy cabin surrounded by nature">
+            <span class="guest-favourite">Guest favourite</span>
+            <span class="heart">♡</span>
+          </a>
+          <div class="property-info">
+            <div class="property-title">
+              <h3>Woodland Cabin</h3><span>★ 4.96</span>
+            </div>
+            <p>Murree, Pakistan</p>
+            <p>Mountain views · 2 beds</p>
+            <p class="price"><strong>$68</strong> night</p>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <a href="#property-details" class="property-image">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=85" alt="Luxury villa with swimming pool">
+            <span class="heart">♡</span>
+          </a>
+          <div class="property-info">
+            <div class="property-title">
+              <h3>Blue Horizon Villa</h3><span>★ 4.92</span>
+            </div>
+            <p>Bali, Indonesia</p>
+            <p>Pool · Ocean views</p>
+            <p class="price"><strong>$145</strong> night</p>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <a href="#property-details" class="property-image">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=85" alt="Minimal modern holiday home">
+            <span class="guest-favourite">Guest favourite</span>
+            <span class="heart">♡</span>
+          </a>
+          <div class="property-info">
+            <div class="property-title">
+              <h3>The Calm House</h3><span>★ 4.89</span>
+            </div>
+            <p>Islamabad, Pakistan</p>
+            <p>Garden · 3 bedrooms</p>
+            <p class="price"><strong>$92</strong> night</p>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <a href="#property-details" class="property-image">
+            <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=85" alt="Small wooden cabin in a forest">
+            <span class="heart">♡</span>
+          </a>
+          <div class="property-info">
+            <div class="property-title">
+              <h3>Pine Escape</h3><span>★ 4.98</span>
+            </div>
+            <p>Hunza, Pakistan</p>
+            <p>Forest views · Fireplace</p>
+            <p class="price"><strong>$75</strong> night</p>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <a href="#property-details" class="property-image">
+            <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=800&q=85" alt="Holiday house near the sea">
+            <span class="guest-favourite">Guest favourite</span>
+            <span class="heart">♡</span>
+          </a>
+          <div class="property-info">
+            <div class="property-title">
+              <h3>Coastal Hideaway</h3><span>★ 4.91</span>
+            </div>
+            <p>Phuket, Thailand</p>
+            <p>Near the beach · 2 beds</p>
+            <p class="price"><strong>$110</strong> night</p>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <a href="#property-details" class="property-image">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=85" alt="Elegant modern home with a bright interior">
+            <span class="heart">♡</span>
+          </a>
+          <div class="property-info">
+            <div class="property-title">
+              <h3>Modern Retreat</h3><span>★ 4.87</span>
+            </div>
+            <p>Dubai, UAE</p>
+            <p>City views · 2 bedrooms</p>
+            <p class="price"><strong>$125</strong> night</p>
+          </div>
+        </article>
+
+      </div>
+      <div class="show-more">
+        <a href="#experiences" class="hero-button">Discover experiences <span>→</span></a>
+      </div>
+    </section>
+
+    <!-- Experiences -->
+    <section class="experiences-section" id="experiences">
+      <div class="experience-image">
+        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=85" alt="Beautiful lake and mountain travel destination">
+      </div>
+      <div class="experience-content">
+        <span class="eyebrow">MORE THAN A STAY</span>
+        <h2>Make room for a little wonder.</h2>
+        <p>Find inspiring destinations, explore new surroundings, and turn your next trip into a memorable adventure.</p>
+        <a href="#properties" class="dark-button">Explore destinations <span>→</span></a>
+      </div>
+    </section>
+
+    <!-- Host section -->
+    <section class="host-section" id="host">
+      <div class="host-content">
+        <span class="eyebrow">SHARE YOUR SPACE</span>
+        <h2>Your place could be someone's favourite.</h2>
+        <p>Have a special space? Discover how hosting can help you share what makes it unique.</p>
+        <a href="mailto:hello@example.com" class="dark-button">Learn about hosting <span>→</span></a>
+      </div>
+      <div class="host-image">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85" alt="Beautiful home interior ready for guests">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo footer-logo">
+          <span class="logo-symbol">⌂</span><span>airbnb</span>
+        </a>
+        <p>Find your place in the world.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Discover</h4>
+        <a href="#homes">Popular homes</a>
+        <a href="#properties">Unique stays</a>
+        <a href="#experiences">Experiences</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Hosting</h4>
+        <a href="#host">Become a host</a>
+        <a href="#host">Share your space</a>
+        <a href="#host">Hosting guide</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Support</h4>
+        <a href="mailto:hello@example.com">Contact us</a>
+        <a href="#homes">Help centre</a>
+        <a href="#homes">Safety information</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Stay Somewhere · Educational project</p>
+      <div>
+        <a href="#homes">Privacy</a>
+        <a href="#homes">Terms</a>
+        <a href="#homes">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
